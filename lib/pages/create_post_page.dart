@@ -35,6 +35,7 @@ class _CreatePostPageState extends State<CreatePostPage> {
         'authorId': user.uid,
         'authorName': user.displayName ?? 'Anonymous',
         'timestamp': FieldValue.serverTimestamp(),
+        'likes': [],
       });
 
       if (mounted) {
